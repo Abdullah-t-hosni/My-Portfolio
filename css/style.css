@@ -535,6 +535,11 @@ span {
     transition: .8rem ease;
 }
 
+.footer a {
+    text-decoration: none;
+    color: var(--main-color);
+}
+
 .footer-iconTop a i {
     font-size: 2.4rem;
     color: var(--snd-bg-color);

@@ -1,28 +1,4 @@
-// Download cv pdf from download button
-  // .getElementById("downloadButton")
-  // .addEventListener("click", function () {
-  //   // Path to the PDF file
-  //   var pdfPath =
-  //     "https://drive.google.com/drive/folders/1b29VNCRHF1r1yileY8SdJKAk0jNdQ-gu";
 
-  //   // Create a link element
-  //   var link = document.createElement("a");
-  //   link.href = pdfPath;
-
-  //   // Set the download attribute with the desired file name
-  //   link.download = "abdullah_t_hosni_cv.pdf";
-
-  //   // Append the link to the document body
-  //   document.body.appendChild(link);
-
-  //   // Trigger the click event on the link
-  //   link.click();
-
-  //   // Remove the link from the document body
-  //   document.body.removeChild(link);
-  // });
-
-  // switch function
 
 
 
@@ -119,4 +95,7 @@ function applySavedThemePreference() {
 document.querySelector("#theme-switcher").addEventListener("click", toggleTheme);
 
 applySavedThemePreference();
+
+
+
 
