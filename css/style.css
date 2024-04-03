@@ -101,7 +101,7 @@
     
         --switch-bg: #2D2C35;
         --switch-circle-bg: #7190FF;
-        --switch-circle-pos: 4rem;
+        --switch-circle-pos: 4.13rem;
         --icon-sun: #77757E;
         --icon-moon: #DCE3FF;
     }
@@ -116,23 +116,23 @@
         border-radius: 50px;
         display: flex;
         align-items: center;
-        gap: 1.50rem;
+        gap: 2.2rem;
         cursor: pointer;
-        padding: 0.8rem;
+        padding: 1rem;
         position: relative;
         transition: background-color 0.3s ease, transform 0.3s ease;
-        }
+    }
     
     #theme-switcher::before {
         content: '';
         position: absolute;
-        width: 3rem;
-        height: 3rem;
+        width: 2.7rem;
+        height: 2.7rem;
         background-color: var(--switch-circle-bg);
         border-radius: 50%;
         z-index: 0;
-        left: 0.55rem;
-        transform: translateX(var(--switch-circle-pos));
+        left: 9%; 
+        transform: translateX( var(--switch-circle-pos));
         transition: transform 0.3s ease;
     }
     
@@ -141,17 +141,50 @@
         transition: fill 0.3s ease;
     }
     
-    #icon-sun {
+    #icon-sun{
         fill: var(--icon-sun);
+
     }
-    
     #icon-moon {
         fill: var(--icon-moon);
+        
     }
+    
+    #theme-switcher:hover {
+        transform: scale(1.05); 
+        
+    }
+    
+    #theme-switcher:hover::before {
+        transform: scale(1.1) translateX(var(--switch-circle-pos)); 
+    }
+    
+    @keyframes pulse {
+        0% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.1);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+    
+    #theme-switcher:focus {
+        outline: none; 
+    }
+    
+    #theme-switcher:focus::before {
+        animation: pulse 1s infinite; 
+    }
+    
+   
+   
+    
 html {
     font-size: 10px;
-    /* overflow: hidden; */
-    /*prevent scrolling*/
+
 }
 
 body {
