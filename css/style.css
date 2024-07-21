@@ -321,7 +321,7 @@ span {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.1), var(--main-color));
+  background: linear-gradient(rgba(0, 0, 0, 0.9), var(--main-color));
   display: flex;
   justify-content: center;
   align-items: center;
@@ -354,7 +354,7 @@ span {
   color: var(--snd-bg-color);
 }
 .portfolio-box:hover.portfolio-layer a i {
-  color: var(--main-color);
+  color: var(--switch-bg);
 }
 .contact h2,
 .skills h2 {
