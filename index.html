@@ -46,36 +46,14 @@
       <i class="fa-solid fa-bars" id="menu-icon"></i>
       <nav class="navbar" id="navbar">
         <div class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <a href="#Home" class="nav-link" aria-label="Navigate to Home section"
-            >HOME</a
-          >
-          <a
-            href="#About"
-            class="nav-link"
-            aria-label="Navigate to About section"
-            >ABOUT</a
-          >
-          <a
-            href="#Services"
-            class="nav-link"
-            aria-label="Navigate to Services section"
-            >SERVICES</a
-          >
-          <a
-            href="#Portfolio"
-            class="nav-link"
-            aria-label="Navigate to Portfolio section"
-            >PROJECTS</a
-          >
-          <a
-            href="#Contact"
-            class="nav-link"
-            aria-label="Navigate to Contact section"
-            >CONTACT</a
-          >
+          <a href="#Home" class="nav-link">HOME</a>
+          <a href="#About" class="nav-link">ABOUT</a>
+          <a href="#Services" class="nav-link">SERVICES</a>
+          <a href="#Portfolio" class="nav-link">PROJECTS</a>
+          <a href="#Contact" class="nav-link">CONTACT</a>
         </div>
       </nav>
-      <div id="theme-switcher" aria-label="Toggle dark mode">
+      <div id="theme-switcher">
         <svg
           id="icon-sun"
           width="20"
@@ -174,7 +152,6 @@
         <button
           class="btn"
           onclick="location.href='https://drive.google.com/file/d/1C6BrKsmmdw1_q3m1FMY_-RNMq0SXXNli/view?usp=drive_link'"
-          aria-label="Download Abdullah's CV"
         >
           Download CV
         </button>
@@ -182,7 +159,6 @@
       <div class="home-img">
         <img src="images/personalimg.jpg" alt="personal image" />
       </div>
-     
     </section>
 
     <!--About-section-->
@@ -261,7 +237,34 @@
             ></a>
           </div>
         </div>
-
+        <div class="portfolio-box">
+          <img src="images/7.JPG" alt="imgPortfolio" />
+          <div class="portfolio-layer">
+            <h4>Coffe-Website</h4>
+            <p>Designed using HTML , CSS and JavaScript.</p>
+            <a
+              title="Coffe-Website"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://abdullah-t-hosni.github.io/Coffe-Website/"
+              ><i class="fa-solid fa-up-right-from-square"></i
+            ></a>
+          </div>
+        </div>
+        <div class="portfolio-box">
+          <img src="images/6.jpg" alt="imgPortfolio" />
+          <div class="portfolio-layer">
+            <h4>Weather Website</h4>
+            <p>Designed using HTML , CSS and JavaScript.</p>
+            <a
+              title="Weather App"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://weather-omega-smoky.vercel.app"
+              ><i class="fa-solid fa-up-right-from-square"></i
+            ></a>
+          </div>
+        </div>
         <div class="portfolio-box">
           <img src="images/2.jpg" alt="imgPortfolio" />
           <div class="portfolio-layer">
@@ -322,36 +325,9 @@
           </div>
         </div>
 
-        <div class="portfolio-box">
-          <img src="images/6.jpg" alt="imgPortfolio" />
-          <div class="portfolio-layer">
-            <h4>Weather Website</h4>
-            <p>Designed using HTML , CSS and JavaScript.</p>
-            <a
-              title="Weather App"
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://weather-omega-smoky.vercel.app"
-              ><i class="fa-solid fa-up-right-from-square"></i
-            ></a>
-          </div>
-        </div>
+        
 
-
-        <div class="portfolio-box">
-          <img src="images/7.JPG" alt="imgPortfolio" />
-          <div class="portfolio-layer">
-            <h4>Coffe-Website</h4>
-            <p>Designed using HTML , CSS and JavaScript.</p>
-            <a
-              title="Coffe-Website"
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://abdullah-t-hosni.github.io/Coffe-Website/"
-              ><i class="fa-solid fa-up-right-from-square"></i
-            ></a>
-          </div>
-        </div>
+       
       </div>
     </section>
 
@@ -360,43 +336,55 @@
       <h2 class="heading">Contact <span>Me</span></h2>
       <div class="content">
         <div>
-          <img class="contact-img" src="images/undraw_contract_re_ves9.svg" alt="contact-photo">
-      </div>
-      <form>
-        <div class="input-box">
-          <input type="text" placeholder="Full Name" id="name" required />
-          <input type="email" placeholder="Email Address" id="email" required />
-        </div>
-        <div class="input-box">
-          <input type="phone" placeholder="Phone Number" id="phone" required />
-          <input
-            type="text"
-            placeholder="Email Subject"
-            id="subject"
-            required
+          <img
+            class="contact-img"
+            src="images/undraw_contract_re_ves9.svg"
+            alt="contact-photo"
           />
         </div>
-        <textarea
-          cols="30"
-          rows="10"
-          placeholder="Your Message"
-          id="message"
-          required
-        ></textarea>
-        <button onclick="sendMail()" class="btn">Send Message</button>
+        <form>
+          <div class="input-box">
+            <input type="text" placeholder="Full Name" id="name" required />
+            <input
+              type="email"
+              placeholder="Email Address"
+              id="email"
+              required
+            />
+          </div>
+          <div class="input-box">
+            <input
+              type="phone"
+              placeholder="Phone Number"
+              id="phone"
+              required
+            />
+            <input
+              type="text"
+              placeholder="Email Subject"
+              id="subject"
+              required
+            />
+          </div>
+          <textarea
+            cols="30"
+            rows="10"
+            placeholder="Your Message"
+            id="message"
+            required
+          ></textarea>
+          <button onclick="sendMail()" class="btn">Send Message</button>
 
-        <script
-          type="text/javascript"
-          src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
-        ></script>
+          <script
+            type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+          ></script>
 
-        <script type="text/javascript">
-          emailjs.init("L4dK2t7h3pGe2_RX0");
-        </script>
-      </form>
-
+          <script type="text/javascript">
+            emailjs.init("L4dK2t7h3pGe2_RX0");
+          </script>
+        </form>
       </div>
-    
     </section>
 
     <!--Footer-section-->
@@ -424,7 +412,7 @@
     <!--Scroll Reveal JS-->
     <script src="https://unpkg.com/scrollreveal"></script>
     <!-- particles.js -->
-     <script src="js/particles.min.js"></script>
+    <script src="js/particles.min.js"></script>
     <!--Main JS-->
     <script src="js/main.js"></script>
   </body>
