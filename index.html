@@ -27,12 +27,15 @@
       content="Explore the portfolio of Abd Ullah T. Hosni, a frontend developer showcasing projects, skills, and experience."
       name="twitter:description"
     />
-    <link rel="icon" type="./images/icon.png" href="./images/icon.png" />
-    <link href="css/all.min.css" rel="stylesheet" />
-    <link href="css/style.css" rel="stylesheet" />
+    <link rel="icon" type="./images/icon.png" href="./images/aboutwebp.webp" />
+
+    <link href="./plugins/css/all.css" rel="stylesheet" />
+    <link href="./plugins/css/style.css" rel="stylesheet" />
     <title>Abd Ullah T.Hosni | Portfolio</title>
   </head>
-  <body data-theme="dark">
+  <body data-theme="dark" data-preloader="true">
+    <div id="cursor"></div>
+
     <header class="container header">
       <a href="#Home" class="logo">Abd Ullah</a>
       <i class="fa-solid fa-bars" id="menu-icon"></i>
@@ -103,10 +106,9 @@
         <h1>Abd Ullah T. Hosni</h1>
         <h3>I'm a <span class="multiple-text"></span></h3>
         <p>
-          I am currently seeking opportunities to contribute to dynamic and
-          collaborative frontend development teams, where I can leverage my
-          skills, expand my knowledge, and grow professionally while being part
-          of a team that values diversity and inclusivity.
+          I'm open to Job opportunities where I can contribute, learn and grow.
+          If you have a good opportunity that matches my skills and experience
+          then don't hesitate to contact me.
         </p>
         <div class="social-media">
           <a
@@ -114,7 +116,9 @@
             title="Facebook"
             rel="noopener noreferrer"
             target="_blank"
+            class="circle"
           >
+            <i class="fa-brands fa-facebook"></i>
             <i class="fa-brands fa-facebook"></i>
           </a>
           <a
@@ -122,7 +126,9 @@
             title="Github"
             rel="noopener noreferrer"
             target="_blank"
+            class="circle"
           >
+            <i class="fa-brands fa-github"></i>
             <i class="fa-brands fa-github"></i>
           </a>
           <a
@@ -130,7 +136,9 @@
             title="Instagram"
             rel="noopener noreferrer"
             target="_blank"
+            class="circle"
           >
+            <i class="fa-brands fa-instagram"></i>
             <i class="fa-brands fa-instagram"></i>
           </a>
           <a
@@ -138,18 +146,20 @@
             title="Linkedin"
             rel="noopener noreferrer"
             target="_blank"
+            class="circle"
           >
+            <i class="fa-brands fa-linkedin"></i>
             <i class="fa-brands fa-linkedin"></i>
           </a>
         </div>
-        <a
-          class="btn"
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://drive.google.com/file/d/1namw2AuZfqs11IyGrykvbcMtafF5j6Ce/view?usp=drive_link&quot"
+        <button
+          class="button button-dot circle "
+          target="_blank"
+          rel="noopener noreferrer"
+          onclick="window.open('https://drive.google.com/file/d/138F4gV1cPCEqlSvfBEOOZw5M4nFhyHqp/view?usp=drive_link')"
         >
           View Resume
-      </a>
+        </button>
       </div>
       <div class="home-img">
         <img alt="personal-image" src="images/personalimg.webp" />
@@ -164,13 +174,30 @@
         <h2 class="heading">About <span>Me</span></h2>
         <h3>Frontend Developer</h3>
         <p>
-          I recently graduated from Route and learned frontend development,
-          becoming proficient in HTML5, CSS3, SASS, Bootstrap, JavaScript,
-          Angular, Git & GitHub. Since then, I've been constantly developing
-          projects to enhance my skills and expand my practical understanding of
-          these technologies.
+          I am a Frontend Web Developer specializing in creating and managing
+          websites and web applications that drive product success and enhance
+          user experiences. Explore my work in the
+          <a href="#Portfolio"><span>Projects section</span> </a> to see some of
+          the projects I've been involved with. In addition to my project work,
+          I also provide valuable insights into web development and programming
+          aimed at supporting and educating the developer community. Feel free
+          to connect with me or follow me on
+          <a
+            rel="noopener noreferrer"
+            target="_blank"
+            href="https://www.linkedin.com/in/abdullah-t-hosni/"
+            ><span>Linkedin</span></a
+          >
+          and
+          <a
+            rel="noopener noreferrer"
+            target="_blank"
+            href="https://www.instagram.com/abdullah.t.hosni"
+            ><span>Instagram</span></a
+          >
+          for valuable content and updates.
         </p>
-        <a href="#" class="btn">Read More</a>
+        <a href="#Portfolio" class="button button-dot">Read More</a>
       </div>
     </section>
 
@@ -185,27 +212,27 @@
             seamlessly across different browsers, ensuring efficient and
             high-quality code that meets your needs.
           </p>
-          <a href="#Portfolio" class="btn">Read More</a>
+          <a href="#Portfolio" class="button button-dot">Read More</a>
         </div>
         <div class="services-box">
-          <i class="fa-solid fa-code"></i>
+          <i class="fa-solid fa-mobile-screen-button"></i>
           <h3>Responsive Web Design</h3>
           <p>
             I can create responsive websites that adapt to different devices
             like desktop, tablets, and smartphones, ensuring the best user
             experience across different platforms and screen sizes.
           </p>
-          <a href="#Portfolio" class="btn">Read More</a>
+          <a href="#Portfolio" class="button button-dot">Read More</a>
         </div>
         <div class="services-box">
-          <i class="fa-solid fa-wrench"></i>
+          <i class="fa-solid fa-computer"></i>
           <h3>IT Support</h3>
           <p>
             I can help you with any IT-related task, whether it's
             troubleshooting software issues, configuring new software, setting
             up networks, or upgrading your existing infrastructure.
           </p>
-          <a href="#" class="btn">Read More</a>
+          <a href="#" class="button button-dot">Read More</a>
         </div>
       </div>
     </section>
@@ -357,7 +384,9 @@
             required
             rows="10"
           ></textarea>
-          <button class="btn" onclick="sendMail()">Send Message</button>
+          <button type="submit" class="button button-dot" onclick="sendMail()">
+            Send Message
+          </button>
           <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
           <script>
             emailjs.init("L4dK2t7h3pGe2_RX0");
@@ -387,7 +416,8 @@
 
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="js/particles.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="./plugins/js/particles.min.js"></script>
+    <script src="./plugins/js/jquery.min.js"></script>
+    <script src="./plugins/js/main.js"></script>
   </body>
 </html>
