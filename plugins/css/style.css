@@ -223,7 +223,7 @@ p {
   overflow: hidden;
   z-index: 1;
   display: inline-block;
-  background: rgba(255, 255, 255, 0.15);
+  background: var(--bg-btn-color);
   backdrop-filter: blur(5px);
   width: 4rem;
   height: 4rem;
