@@ -1,4 +1,17 @@
 @import url(https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap);
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, #ff82f3 0%, #7b13ff 50%, #7421ae 100%);
+  border-radius: 6px;
+}
+
 #theme-switcher,
 .about {
   align-items: center;
@@ -156,11 +169,16 @@ section {
   background: var(--main-color);
   box-shadow: 0 0 1rem var(--main-color);
 }
-.logo {
-  font-size: 2.5rem;
-  font-weight: 700;
-  cursor: default;
+
+.header img {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  border: 0.2rem solid var(--main-color);
+  background: #121212;
+  
 }
+
 .navbar a {
   font-size: 1.5rem;
   margin-left: 4rem;
@@ -338,13 +356,15 @@ section:nth-child(odd) {
   padding: 3rem 2rem 4rem;
   border-radius: 2rem;
   text-align: center;
-  border: 0.2rem solid var(--bg-color);
+  border: 0.2rem solid var(--bg-btn-color);
   transition: 0.5s;
 }
+
 .services-container .services-box:hover,
 .skills-container .skills-box:hover {
   border-color: var(--main-color);
   transform: scale(1.02);
+  
 }
 .services-box i {
   font-size: 4rem;
@@ -854,13 +874,14 @@ button {
   cursor: pointer;
 }
 .button {
+  font-family: Nunito, sans-serif;
   display: inline-block;
   background: var(--bg-btn-color);
   border-radius: 3em;
   padding: 26px 60px;
   color: var(--text-color);
   font-size: 1.2rem;
-  font-weight: 500;
+  font-weight: 900;
   letter-spacing: 1px;
   transition: background 0.12s ease-out, color 0.12s ease-out;
 }
