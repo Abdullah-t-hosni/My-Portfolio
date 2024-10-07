@@ -197,3 +197,25 @@ $(window).on("load", function () {
       navbar.style.backgroundColor = 'transparent'; 
     }
   });
+
+  const filterButtons = document.querySelectorAll('.filter-btn');
+const portfolioBoxes = document.querySelectorAll('.portfolio-box');
+
+filterButtons.forEach((button) => {
+  button.addEventListener('click', () => {
+    const filter = button.getAttribute('data-filter');
+    
+    // Remove active class from all buttons and add it to the clicked button
+    filterButtons.forEach((btn) => btn.classList.remove('active'));
+    button.classList.add('active');
+
+    // Show/Hide portfolio boxes based on the selected filter
+    portfolioBoxes.forEach((box) => {
+      if (filter === 'all' || box.getAttribute('data-category') === filter) {
+        box.style.display = 'block';
+      } else {
+        box.style.display = 'none';
+      }
+    });
+  });
+});
