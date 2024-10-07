@@ -17,7 +17,7 @@
   align-items: center;
   display: flex;
 }
-#theme-switcher,
+#theme-switch,
 .about,
 .header,
 .home {
@@ -27,6 +27,7 @@
 .header {
   padding: 2rem 9%;
 }
+
 *,
 button {
   padding: 0;
@@ -154,7 +155,7 @@ section {
   position: fixed;
   top: 0;
   left: 0;
-  background: var(--bg-color);
+
   justify-content: space-between;
   align-items: center;
   z-index: 100;
@@ -176,7 +177,6 @@ section {
   border-radius: 50%;
   border: 0.2rem solid var(--main-color);
   background: #121212;
-  
 }
 
 .navbar a {
@@ -364,7 +364,6 @@ section:nth-child(odd) {
 .skills-container .skills-box:hover {
   border-color: var(--main-color);
   transform: scale(1.02);
-  
 }
 .services-box i {
   font-size: 4rem;
