@@ -561,6 +561,18 @@ section:nth-child(odd) {
     width: 50%;
     margin-top: 2rem;
   }
+
+  .portfolio-layer h4{
+    font-size: 2rem;
+  }
+  .portfolio-layer p{
+    font-size: 1.5rem;
+  }
+  
+  .portfolio-layer a{
+    width: 4rem;
+    height: 4rem;
+  }
 }
 @media (max-width: 991px) {
   .footer,
@@ -592,6 +604,17 @@ section:nth-child(odd) {
     margin-top: 2rem;
     margin-left: 0;
   }
+
+  .portfolio-layer{
+    padding: 0 3rem;
+  }
+  .portfolio-layer h4{
+    font-size: 2rem;
+  }
+  .portfolio-layer p{
+    font-size: 1rem;
+  }
+
 }
 @media (max-width: 768px) {
   .about-content,
@@ -662,6 +685,20 @@ section:nth-child(odd) {
     margin-top: 2rem;
     margin-left: 0;
   }
+
+  .filter-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .filter-btn {
+    margin:  10px 0; 
+    padding: 10px 0 0 ;
+  }
+
+
 }
 
 @media (max-width: 617px) {
@@ -704,6 +741,7 @@ section:nth-child(odd) {
     margin-top: 2rem;
     margin-left: 0;
   }
+
 }
 @media (max-width: 450px) {
   html {
@@ -734,6 +772,11 @@ section:nth-child(odd) {
     margin-top: 2rem;
     margin-left: 0;
   }
+  .filter-btn {
+    font-size: 14px; /* تقليل حجم الخط للأجهزة الأصغر */
+    padding: 8px 15px; /* تصغير البادينغ */
+  }
+ 
 }
 
 #particles-js {
@@ -975,13 +1018,13 @@ button {
   margin-bottom: 20px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  flex-wrap: wrap; 
 }
-
 
 .filter-btn {
   margin: 0 10px;
+  font-size: 16px; 
 }
-
 .filter-btn.active {
   background-image: linear-gradient(
     45deg,
